@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap
+  xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/" title="Root" description="Root">
+    <siteMapNode url="~/Default.aspx" title="Home"
+        description="Arkham Home" />
+    
+    <siteMapNode url="~/BooksByType.aspx" title="Books by Type"
+        description="Books by type" />
+    
+    <siteMapNode url="~/BooksByAuthor.aspx" title="Books by Author"
+        description="Books by author" />
+    
+    <siteMapNode url="~/Customers.aspx" title="Customers"
+        description="Arkham customer info" />
+    
+    <siteMapNode url="~/Orders.aspx" title="Orders"
+        description="Orders" />
+  
+    <siteMapNode url="~/AboutUs.aspx" title="About Us"
+        description="About Us" />
+  
+    <siteMapNode url="~/Interests.aspx" title="Interests"
+        description="Interests" />
+  
+    <siteMapNode url="~/ContactUs.aspx" title="Contact Us"
+        description="Contact info" />
+  </siteMapNode>
+</siteMap>  
