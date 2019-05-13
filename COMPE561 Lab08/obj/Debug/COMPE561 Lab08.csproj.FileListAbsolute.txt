@@ -69,3 +69,6 @@ C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\obj\Debug\COMPE561 Lab
 C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\obj\Debug\COMPE561 Lab08.csproj.CopyComplete
 C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\obj\Debug\COMPE561 Lab08.dll
 C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\obj\Debug\COMPE561 Lab08.pdb
+C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\bin\MySql.Data.dll
+C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\bin\Google.Protobuf.dll
+C:\Users\Cliff\source\repos\COMPE561 Lab08\COMPE561 Lab08\bin\MySql.Data.xml
