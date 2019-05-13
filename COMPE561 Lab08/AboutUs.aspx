@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>About Arkham House Publishers</h1>
 
-    <!--All links redirect to homepage-->
+    <!--Links redirect to homepage-->
     <a href="Default">Important Notice to Booksellers</a><br />
     <a href="Default">Out-of-Print titles</a><br />
     <a href="Default">Shipping Policy</a><br />

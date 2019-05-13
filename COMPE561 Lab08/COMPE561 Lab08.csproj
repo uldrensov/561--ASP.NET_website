@@ -250,6 +250,7 @@
     <Compile Include="Interests.aspx.designer.cs">
       <DependentUpon>Interests.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Order.cs" />
     <Compile Include="Orders.aspx.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

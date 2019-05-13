@@ -21,7 +21,7 @@ namespace COMPE561_Lab08
                 //create connection string, tie it to a connection object, then pass this object with a SQL directive to a command object
                 const string connectionString = "Data Source=localhost;Initial Catalog=final8;User ID=root;Password=";
                 MySqlConnection conn = new MySqlConnection(connectionString);
-                MySqlCommand comm = new MySqlCommand("SELECT FirstName, LastName, AuthorId FROM author", conn);
+                MySqlCommand comm = new MySqlCommand("SELECT AuthorId, CONCAT(FirstName, ' ', LastName) AS FullName FROM author", conn);
 
                 try
                 {
@@ -32,7 +32,7 @@ namespace COMPE561_Lab08
                     //bind data to the ASP dropdown
                     authorList.DataSource = reader;
                     authorList.DataValueField = "AuthorId";
-                    authorList.DataTextField = "LastName";
+                    authorList.DataTextField = "FullName";
                     authorList.DataBind();
 
                     //close reader
