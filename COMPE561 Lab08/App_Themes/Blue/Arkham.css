@@ -24,15 +24,15 @@ a:hover {
 }
 
 .Menu {
-    top: 160px;
+    top: 200px;
     left: 15px;
     width: 195px;
     position: absolute;
 }
 
 .Content {
-    top: 160px;
+    top: 200px;
     left: 170px;
     position: absolute;
-    width: 600px;
+    width: 800px;
 }

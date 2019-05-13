@@ -3,13 +3,13 @@
   xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="~/" title="Root" description="Root">
     <siteMapNode url="~/Default.aspx" title="Home"
-        description="Arkham Home" />
+        description="Arkham Homepage" />
     
     <siteMapNode url="~/BooksByType.aspx" title="Books by Type"
-        description="Books by type" />
+        description="Find books by type" />
     
     <siteMapNode url="~/BooksByAuthor.aspx" title="Books by Author"
-        description="Books by author" />
+        description="Find books by author" />
     
     <siteMapNode url="~/Customers.aspx" title="Customers"
         description="Arkham customer info" />

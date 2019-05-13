@@ -13,7 +13,7 @@
 
             <!-- Header -->
             <div class="Header">
-                <asp:Image id="Image1" runat="server" ImageUrl="~/Images/Arkham.jpg" Width="339" Height="90"
+                <asp:Image id="Image1" runat="server" ImageUrl="~/Images/arkhamsplash.png" Width="731" Height="187"
                     AlternateText="Arkham House Books" />
             </div>
 
@@ -22,7 +22,7 @@
                 <asp:SiteMapDataSource id="ArkhamSiteMap" runat="server" ShowStartingNode="false" />
                 <asp:Menu id="ArkhamMenu" runat="server" DataSourceID="ArkhamSiteMap">
                     <StaticItemTemplate>
-                        <img src="Images/Book_Closed.gif" alt="+" width="16" height="16" style="border-width: 0;" />
+                        <img src="Images/arkhamicon.png" alt="+" width="22" height="22" style="border-width: 0;" />
                         <%# Eval("Text")%>
                     </StaticItemTemplate>
                 </asp:Menu>
