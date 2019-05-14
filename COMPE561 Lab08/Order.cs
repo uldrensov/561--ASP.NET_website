@@ -12,7 +12,7 @@ namespace COMPE561_Lab08
         public string isbn { get; set; }
         public string price { get; set; }
         public string qty { get; set; }
-        public string totalprice { get; set; }
+        public string linetotal { get; set; }
 
 
         //default constr
@@ -22,18 +22,18 @@ namespace COMPE561_Lab08
             isbn = "-NULL-";
             price = "-NULL-";
             qty = "-NULL-";
-            totalprice = "-NULL-";
+            linetotal = "-NULL-";
         }
 
 
-        //exp val contsr
-        public Order(string TITLE, string ISBN, string PRICE, string QTY, string TOTALPRICE)
+        //exp val constr
+        public Order(string TITLE, string ISBN, string PRICE, string QTY, string LINETOTAL)
         {
             title = TITLE;
             isbn = ISBN;
             price = PRICE;
             qty = QTY;
-            totalprice = TOTALPRICE;
+            linetotal = LINETOTAL;
         }
     }
 }

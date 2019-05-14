@@ -49,31 +49,22 @@ namespace COMPE561_Lab08 {
         protected global::System.Web.UI.WebControls.TextBox qTextBox;
         
         /// <summary>
-        /// qNumReq control.
+        /// cartGrid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator qNumReq;
+        protected global::System.Web.UI.WebControls.GridView cartGrid;
         
         /// <summary>
-        /// qNumCheck control.
+        /// WarningLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator qNumCheck;
-        
-        /// <summary>
-        /// Cart control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Cart;
+        protected global::System.Web.UI.WebControls.Label WarningLabel;
         
         /// <summary>
         /// addButton control.

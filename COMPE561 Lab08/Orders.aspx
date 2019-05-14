@@ -2,7 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>Place an order</h1>
-    <asp:Label ID="ErrorMessage" ForeColor="Red" runat="server" />
+
+    <!--Error message label-->
+    <asp:Label ID="ErrorMessage" ForeColor="Red" Text="" Visible="false" runat="server" />
 
     <!--Customer select dropdown-->
     <p>
@@ -22,29 +24,27 @@
     <p>
         Quantity:
         <asp:TextBox id="qTextBox" runat="server" CssClass="textbox" />
-
-        <asp:RequiredFieldValidator id="qNumReq" runat="server" ControlToValidate="qTextBox"
-            ErrorMessage="<br />Error: Required field!" Display="Dynamic" />
-
-        <asp:CompareValidator id="qNumCheck" runat="server" ControlToValidate="qTextBox"
-            Operator="DataTypeCheck" Type="Integer" ErrorMessage="<br />Error: Value must be a number!" Display="Dynamic" />
     </p>
 
-    <!--Shopping cart repeater-->
+    <!--Shopping cart gridview-->
+    Shopping cart:
+    <hr />
     <p>
-        My cart:<br />
-        <asp:Repeater id="Cart" runat="server">
-            <ItemTemplate>
-                <asp:Textbox ID ="titleLabel" runat="server"
-                    Text = <%# Eval("title")%> />
-                <br />
-
-                <asp:Label ID ="isbnLabel" runat="server">
-                    <%# Eval("isbn")%>
-                </asp:Label><hr />
-            </ItemTemplate>
-        </asp:Repeater>
+        <asp:GridView id="cartGrid" runat="server" AutoGenerateColumns="false">
+            <columns>
+                <asp:boundfield datafield="title" headertext="Title"/>
+                <asp:boundfield datafield="isbn" headertext="ISBN"/>
+                <asp:boundfield datafield="price" headertext="Price($)"/>
+                <asp:boundfield datafield="qty" headertext="Quantity"/>
+                <asp:boundfield datafield="linetotal" headertext="Line Total($)"/>
+            </columns>
+        </asp:GridView>
     </p>
+    <hr />
+
+    <!--QoL: Warning label-->
+    <asp:Label ID="WarningLabel" ForeColor="Purple" Text="WARNING: Please use the quantity field to order 
+        multiple copies of one title; 'duplicate' rows will be ignored!" Visible="true" runat="server" />
 
     <!--Add to cart, empty cart buttons-->
     <p>
